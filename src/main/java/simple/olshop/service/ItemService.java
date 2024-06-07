@@ -5,15 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import simple.olshop.dto.customer.CustomerListDto;
-import simple.olshop.dto.customer.CustomerRequestDto;
-import simple.olshop.dto.customer.CustomerResponseDto;
 import simple.olshop.dto.item.ItemListDto;
 import simple.olshop.dto.item.ItemRequestDto;
 import simple.olshop.dto.item.ItemResponseDto;
-import simple.olshop.model.Customers;
 import simple.olshop.model.Item;
-import simple.olshop.repository.itemRepository;
 import simple.olshop.repository.ItemRepository;
 
 import java.util.List;

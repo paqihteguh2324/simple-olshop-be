@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Timestamp;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,5 +17,6 @@ public class CustomerRequestDto {
     private String customerCode;
     private String customerPhone;
     private Boolean isActive;
+    private Timestamp lastOrderDate;
     private String pic;
 }
