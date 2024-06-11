@@ -19,7 +19,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/customer")
+@RequestMapping("/item")
 public class ItemController {
 
     @Autowired
@@ -63,7 +63,7 @@ public class ItemController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public Item delete(@PathVariable int id) throws Exception {
+    public Item delete(@PathVariable Integer id) throws Exception {
         try {
             Item item = itemService.deleteItem(id);
             return ResponseEntity.ok().body(item).getBody();

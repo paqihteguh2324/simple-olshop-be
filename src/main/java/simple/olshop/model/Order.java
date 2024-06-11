@@ -32,9 +32,11 @@ public class Order {
     private BigInteger totalPrice;
 
     @ManyToOne
+    @JoinColumn(name = "customer_id", nullable = false)
     private Customers customers;
 
-    @OneToMany
+    @ManyToOne
+    @JoinColumn(name = "items_id", nullable = false)
     private Item item;
 
     @Column(name = "quantity")
